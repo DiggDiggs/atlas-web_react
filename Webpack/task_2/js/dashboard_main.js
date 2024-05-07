@@ -2,8 +2,11 @@
 import $ from 'jquery';
 // import lodash
 import _ from 'lodash';
+// styles
+import '../css/main.css';
 
 // append elements
+$('body').append(`<div id="logo"></div>`);
 $('body').append(`<p>Holberton Dashboard</p>`);
 $('body').append(`<p>Dashboard data for the students</p>`);
 $('body').append(`<button>Click here to get started</button>`);
