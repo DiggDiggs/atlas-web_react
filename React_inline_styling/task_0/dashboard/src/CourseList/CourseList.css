@@ -1,21 +1,24 @@
+/* Styles for the course list table */
 .course-list {
-    width: 95%;
-    margin: auto;
-    margin-top: 200px;
-    border: 1px solid gray;
-    border-collapse: collapse;
-  }
-  
-  .course-list th[colspan='2'] {
-    text-align: center;
-  }
-  
-  .course-list th {
-    text-align: left;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-  }
-  
-  .course-list td {
-    text-align: left;
-  }
+  width: 95%;
+  margin: 200px auto 0 auto; /* Margin shorthand for top, right, bottom, left */
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+/* Styles for table header cells with colspan 2 */
+.course-list th[colspan='2'] {
+  text-align: center;
+}
+
+/* General styles for table header cells */
+.course-list th {
+  text-align: left;
+  border: 1px solid gray; /* Border on all sides for consistency */
+}
+
+/* General styles for table data cells */
+.course-list td {
+  text-align: left;
+  border: 1px solid gray; /* Border on all sides for consistency */
+}

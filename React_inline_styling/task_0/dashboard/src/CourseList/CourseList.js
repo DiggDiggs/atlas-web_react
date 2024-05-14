@@ -8,7 +8,10 @@ const CourseList = ({ listCourses }) => {
   return (
     <table className='course-list'>
       <thead>
+        {/* Header row for "Available courses" */}
         <CourseListRow textFirstCell='Available courses' isHeader={true} />
+
+        {/* Header row for "Course name" and "Credit" */}
         <CourseListRow
           textFirstCell='Course name'
           textSecondCell='Credit'
@@ -16,6 +19,7 @@ const CourseList = ({ listCourses }) => {
         />
       </thead>
       <tbody>
+        {/* Show message if no courses available */}
         {listCourses.length === 0 && (
           <CourseListRow
             textFirstCell='No course available yet'
@@ -23,6 +27,7 @@ const CourseList = ({ listCourses }) => {
           />
         )}
 
+        {/* Render each course as a row */}
         {listCourses.map((course) => (
           <CourseListRow
             key={course.id}
